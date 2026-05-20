@@ -1,19 +1,21 @@
 <div align="center">
 
-```
 ███╗   ███╗██╗   ██╗███████╗████████╗███████╗██████╗ ██╗   ██╗ ██████╗██╗      █████╗ ███████╗███████╗
 ████╗ ████║╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝██╔══██╗╚██╗ ██╔╝██╔════╝██║     ██╔══██╗██╔════╝██╔════╝
 ██╔████╔██║ ╚████╔╝ ███████╗   ██║   █████╗  ██████╔╝ ╚████╔╝ ██║     ██║     ███████║███████╗███████╗
 ██║╚██╔╝██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██╔══██╗  ╚██╔╝  ██║     ██║     ██╔══██║╚════██║╚════██║
 ██║ ╚═╝ ██║   ██║   ███████║   ██║   ███████╗██║  ██║   ██║   ╚██████╗███████╗██║  ██║███████║███████║
 ╚═╝     ╚═╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
-```
 
-MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange Berbasis Moodle
+# MYSTERYCLASS REWARD SYSTEM
+### *Implementasi Conditional Activity dan Point Exchange Berbasis Moodle*
+
+</div>
 
 ---
 
 ## ✨ Fitur Unggulan
+
 <table>
 <tr>
 <td width="50%">
@@ -47,15 +49,43 @@ MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange
 
 </td>
 </tr>
-<tr>
-<td width="50%">
+</table>
 
 ---
+
+# 👨‍💻 Author
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+
+### Georedy Hermawan P.
+Mahasiswa S1 Pendidikan Teknologi Informasi  
+Universitas Negeri Surabaya
+
+</td>
+
+<td align="center" width="33%">
+
+### Lazuardi
+Mahasiswa S1 Pendidikan Teknologi Informasi  
+Universitas Negeri Surabaya
+
+</td>
+
+<td align="center" width="33%">
+
+### Ahmad Farel Firmansyah
+Mahasiswa S1 Pendidikan Teknologi Informasi  
+Universitas Negeri Surabaya
+
+</td>
+</tr>
+</table>
+
 <div align="center">
-## 🏗️ Informasi Author
-Mahasiswa S1 Pendidikan Teknologi Informasi, Universitas Negeri Surabaya
-Dibuat oleh:
-- Georedy Hermawan P.
-- Lazuardi
-- Ahmad Farel Firmansyah
-Dosen Pembimbing: Muhammad Sonhaji Akbar, S.Pd., M.Kom.
+
+### 🎓 Dosen Pembimbing
+**Muhammad Sonhaji Akbar, S.Pd., M.Kom.**
+
+</div>
