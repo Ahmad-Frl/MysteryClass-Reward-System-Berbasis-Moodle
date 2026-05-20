@@ -11,6 +11,7 @@
 
 MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange Berbasis Moodle
 
+---
 ## ✨ Fitur Unggulan
 <table>
 <tr>
@@ -47,6 +48,7 @@ MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange
 </tr>
 <tr>
 <td width="50%">
+---
 
 ## 🏗️ Informasi Author
 Mahasiswa S1 Pendidikan Teknologi Informasi, Universitas Negeri Surabaya
