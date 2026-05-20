@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Tricks: Senjata Rahasia Teknisi Jaringan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-main: #0B0E14;
+            --bg-card: rgba(20, 25, 34, 0.7);
+            --text-main: #E2E8F0;
+            --text-muted: #94A3B8;
+            --cyan-neon: #00F0FF;
+            --purple-neon: #B14FFF;
+            --red-neon: #FF2A54;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.05), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(177, 79, 255, 0.05), transparent 25%);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, var(--cyan-neon), var(--purple-neon));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.3));
+        }
+
+        .subtitle {
+            font-family: 'Fira Code', monospace;
+            color: var(--cyan-neon);
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Section Title Styling */
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            width: 100%;
+        }
+
+        /* Grid Layout untuk Card */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        /* Card Styling Modern */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--cyan-neon);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+            border-color: rgba(0, 240, 255, 0.3);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .item-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .analogi {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--cyan-neon);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .brand-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 1rem;
+        }
+
+        .brand-tag {
+            background: rgba(0, 240, 255, 0.1);
+            color: var(--cyan-neon);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: 'Fira Code', monospace;
+            transition: all 0.2s ease;
+        }
+
+        .brand-tag:hover {
+            background: var(--cyan-neon);
+            color: #000;
+        }
+
+        /* Easter Egg Section */
+        .easter-egg-section {
+            background: linear-gradient(145deg, rgba(177, 79, 255, 0.05), rgba(0, 0, 0, 0.2));
+            border: 1px solid rgba(177, 79, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .easter-egg-section h2 { border-bottom-color: rgba(177, 79, 255, 0.2); }
+        .easter-egg-section h2 span { color: var(--purple-neon); }
+
+        .callout-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .callout-box {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px dashed rgba(177, 79, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .callout-box:hover {
+            background: rgba(177, 79, 255, 0.05);
+            border-color: var(--purple-neon);
+        }
+
+        .callout-box b {
+            color: var(--purple-neon);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* Jebakan Batman Section */
+        .jebakan-batman {
+            background: rgba(255, 42, 84, 0.05);
+            border: 1px solid rgba(255, 42, 84, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .jebakan-batman::after {
+            content: '⚠ WARNING';
+            position: absolute;
+            top: -12px;
+            right: 2rem;
+            background: var(--red-neon);
+            color: white;
+            padding: 2px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .jebakan-batman h2 { border-bottom-color: rgba(255, 42, 84, 0.2); }
+        .jebakan-batman h2 span { color: var(--red-neon); }
+
+        .jebakan-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .jebakan-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+        }
+
+        .jebakan-list li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.9rem;
+        }
+
+        .jebakan-list b { color: var(--text-main); }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .card { padding: 1.5rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Tips & Tricks Jaringan</h1>
+        </header>
+
+        <section id="materi">
+            <h2><span>🚀</span> Senjata Rahasia & Pasukan Udara</h2>
+            
+            <div class="grid-container">
+                <div class="card">
+                    <span class="item-title">01. Access Point (Jembatan Tak Kasat Mata)</span>
+                    <p style="color: var(--text-muted);"><b>Fungsi:</b> Jika Switch adalah terminal bus untuk jalur darat (kabel), maka Access Point (AP) adalah menara pengawas penerbangan (Wi-Fi). AP mengubah sinyal dari kabel LAN menjadi sinyal radio nirkabel.</p>
+                    
+                    <div class="analogi">
+                        <b>Analogi:</b> Seperti speaker di tengah lapangan; semakin dekat jaraknya, semakin jelas suaranya. Semakin banyak dinding penghalang, suaranya makin redup (blank spot).
+                    </div>
+                    
+                    <div class="brand-tags">
+                        <span class="brand-tag">Aruba</span>
+                        <span class="brand-tag">Ruckus</span>
+                        <span class="brand-tag">TP-Link</span>
+                        <span class="brand-tag">UniFi</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="item-title">02. Crimping Tool & LAN Tester</span>
+                    <p style="color: var(--text-muted);"><b>Fungsi:</b> Kabel UTP ibarat jalan tol yang belum ada gerbangnya. Untuk memasang gerbang (RJ45), kita butuh "tang khusus" bernama <b>Crimping Tool</b>. Setelah dipasang, kita wajib mengeceknya menggunakan <b>LAN Tester</b>.</p>
+                    
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(255, 42, 84, 0.1); border-radius: 8px; border-left: 3px solid var(--red-neon);">
+                        <span style="color: var(--red-neon); font-weight: bold; display: block; margin-bottom: 5px;">[!] PENTING</span>
+                        <span style="font-size: 0.9rem; color: var(--text-main);">Jika salah satu lampu di LAN Tester mati, jaringan bisa melambat drastis atau *Request Timed Out* sepenuhnya.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="easter-egg-section">
+            <h2><span>🥚</span> EASTER EGG: Fakta Unik Jaringan</h2>
+            
+            <div class="callout-grid">
+                <div class="callout-box">
+                    <b>Misteri "Lilitan" UTP</b>
+                    <span style="color: var(--text-muted); font-size: 0.95rem;">Pernah sadar kabel kecil di dalamnya saling melilit (twisted)? Ini menggunakan prinsip fisika untuk menghilangkan "crosstalk" (gangguan elektromagnetik). Ibarat dua orang berbicara, lilitan ini mencegah suara bertabrakan.</span>
+                </div>
+
+                <div class="callout-box">
+                    <b>Kutukan 100 Meter</b>
+                    <span style="color: var(--text-muted); font-size: 0.95rem;">Kabel UTP maksimal 100m karena fenomena <i>Attenuation</i> (Pelemahan Sinyal). Bayangkan berteriak dari 150m, suara akan hilang tertiup angin. Begitu juga dengan data listrik di kabel tembaga.</span>
+                </div>
+
+                <div class="callout-box">
+                    <b>Asal Usul "PING"</b>
+                    <span style="color: var(--text-muted); font-size: 0.95rem;">Diambil dari teknologi Sonar kapal selam. Kapal selam mengirim suara ("piiing...") lalu menghitung waktu pantulannya. Hal persis dilakukan PC-mu ke server Google!</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="jebakan-batman">
+            <h2><span>🦇</span> "JEBAKAN BATMAN" Dalam RAB</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">Hati-hati dengan "Printilan" (Biaya Tersembunyi). Jangan sampai proyekmu nombok gara-gara poin ini:</p>
+            
+            <ul class="jebakan-list">
+                <li><b>Konektor RJ45 Cadangan:</b> Jangan beli pas! Risiko gagal crimping sangat tinggi. Selalu lebihkan 20-30% dari kebutuhan awal.</li>
+                <li><b>Cable Duct / Pipa Pelindung:</b> Kabel LAN di lantai bisa digigit tikus atau tersandung. Wajib anggarkan pelindung (conduit) agar jaringan berumur panjang.</li>
+                <li><b>Kabel Ties:</b> Murah tapi krusial. Tanpa ini, manajemen kabel di rak server akan terlihat seperti sarang laba-laba raksasa.</li>
+                <li><b>Stop Kontak & UPS:</b> Switch dan Router butuh listrik! Pastikan colokan *grounding* dan *backup power* tersedia di titik instalasi.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>("© 2026 Modul Pelatihan Jaringan - Kelompok 1 Pendidikan Teknologi Informasi");</p>
+        </footer>
+    </div>
+
+</body>
+</html>

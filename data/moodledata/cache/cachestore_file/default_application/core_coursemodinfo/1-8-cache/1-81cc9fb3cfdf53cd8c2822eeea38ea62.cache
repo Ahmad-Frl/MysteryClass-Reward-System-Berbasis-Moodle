@@ -1,0 +1,32 @@
+O:26:"core_cache\version_wrapper":2:{s:4:"data";O:8:"stdClass":9:{s:7:"modinfo";a:2:{i:20;O:8:"stdClass":14:{s:2:"id";s:1:"4";s:2:"cm";s:2:"20";s:3:"mod";s:5:"forum";s:7:"section";s:1:"0";s:9:"sectionid";s:2:"17";s:6:"module";s:2:"10";s:5:"added";s:10:"1778042186";s:7:"visible";s:1:"1";s:19:"visibleoncoursepage";i:1;s:10:"visibleold";s:1:"1";s:19:"completionpassgrade";s:1:"0";s:15:"downloadcontent";s:1:"1";s:4:"lang";N;s:4:"name";s:18:"Site announcements";}i:22;O:8:"stdClass":15:{s:2:"id";s:1:"1";s:2:"cm";s:2:"22";s:3:"mod";s:10:"attendance";s:7:"section";s:1:"1";s:9:"sectionid";s:2:"16";s:6:"module";s:2:"25";s:5:"added";s:10:"1778642999";s:7:"visible";s:1:"1";s:19:"visibleoncoursepage";i:1;s:10:"visibleold";s:1:"1";s:19:"completionpassgrade";s:1:"0";s:18:"deletioninprogress";s:1:"1";s:15:"downloadcontent";s:1:"1";s:4:"lang";s:0:"";s:4:"name";s:9:"KEHADIRAN";}}s:12:"sectioncache";a:2:{i:0;O:8:"stdClass":3:{s:2:"id";s:2:"17";s:4:"name";N;s:12:"availability";N;}i:1;O:8:"stdClass":4:{s:2:"id";s:2:"16";s:4:"name";s:0:"";s:7:"summary";s:3382:"<div style="background: linear-gradient(135deg, #141e30, #243b55); border-radius: 15px; padding: 50px 20px; text-align: center; color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.2); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; position: relative; overflow: hidden;">
+    
+    <img src="@@PLUGINFILE@@/Gemini_Generated_Image_3itx5s3itx5s3itx.png" alt="Logo" style="width: 140px; height: 140px; border-radius: 50%; border: 5px solid rgba(255,255,255,0.2); box-shadow: 0 5px 15px rgba(0,0,0,0.5); margin-bottom: 25px; background-color: #ffffff; object-fit: contain; padding: 10px;">
+
+    <h1 style="margin: 0 0 15px 0; font-size: 38px; font-weight: 800; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Selamat Datang di E-Learning</h1>
+    <p style="font-size: 18px; margin: 0 auto 30px auto; max-width: 650px; line-height: 1.6; color: #d3d9df;">Tingkatkan pengetahuan dan raih prestasimu. Mulai petualangan belajarmu sekarang dengan materi yang interaktif dan menyenangkan.</p>
+
+    <a href="/moodle/my/courses.php" style="display: inline-block; padding: 14px 35px; background: linear-gradient(to right, #00d2ff, #3a7bd5); color: white; text-decoration: none; font-weight: bold; border-radius: 30px; font-size: 16px; transition: 0.3s; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);">MULAI BELAJAR 🚀</a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: -30px; margin-bottom: 50px; padding: 0 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; position: relative; z-index: 10;">
+    
+    <div style="flex: 1; min-width: 250px; max-width: 320px; background: white; border-radius: 15px; padding: 30px 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-top: 6px solid #3a7bd5;">
+        <div style="font-size: 45px; margin-bottom: 15px;">📚</div>
+        <h3 style="margin-top: 0; color: #2c3e50; font-size: 22px; font-weight: 700;">Materi Lengkap</h3>
+        <p style="color: #7f8c8d; font-size: 15px; line-height: 1.5; margin-bottom: 0;">Akses berbagai modul, bahan tayang, dan video pembelajaran kapan saja.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 250px; max-width: 320px; background: white; border-radius: 15px; padding: 30px 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-top: 6px solid #00d2ff;">
+        <div style="font-size: 45px; margin-bottom: 15px;">✍️</div>
+        <h3 style="margin-top: 0; color: #2c3e50; font-size: 22px; font-weight: 700;">Tugas &amp; Kuis</h3>
+        <p style="color: #7f8c8d; font-size: 15px; line-height: 1.5; margin-bottom: 0;">Uji pemahamanmu melalui kuis interaktif dan penugasan terstruktur.</p>
+    </div>
+
+    <div style="flex: 1; min-width: 250px; max-width: 320px; background: white; border-radius: 15px; padding: 30px 20px; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-top: 6px solid #28a745;">
+        <div style="font-size: 45px; margin-bottom: 15px;">💬</div>
+        <h3 style="margin-top: 0; color: #2c3e50; font-size: 22px; font-weight: 700;">Forum Diskusi</h3>
+        <p style="color: #7f8c8d; font-size: 15px; line-height: 1.5; margin-bottom: 0;">Ruang interaksi aktif untuk berdiskusi dengan pengajar dan rekan lainnya.</p>
+    </div>
+</div>
+
+<div style="height: 60px; width: 100%; clear: both;"></div>";s:12:"availability";s:28:"{"op":"&","c":[],"showc":[]}";}}s:9:"shortname";s:5:"MooGe";s:8:"fullname";s:14:"Moodle Academy";s:6:"format";s:4:"site";s:16:"enablecompletion";s:1:"0";s:9:"groupmode";s:1:"0";s:14:"groupmodeforce";s:1:"0";s:8:"cacherev";s:10:"1778643510";}s:7:"version";i:1778643510;}
