@@ -49,6 +49,8 @@ MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange
 <td width="50%">
 
 ## 🏗️ Informasi Author
+<tr>
+<td width="50%">
 Mahasiswa S1 Pendidikan Teknologi Informasi, Universitas Negeri Surabaya
 Dibuat oleh:
 - Georedy Hermawan P.
