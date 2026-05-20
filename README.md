@@ -48,6 +48,7 @@ MYSTERYCLASS REWARD SYSTEM: Implementasi Conditional Activity dan Point Exchange
 </tr>
 <tr>
 <td width="50%">
+
 ```
 
 ## 🏗️ Informasi Author
@@ -57,3 +58,5 @@ Dibuat oleh:
 - Lazuardi
 - Ahmad Farel Firmansyah
 Dosen Pembimbing: Muhammad Sonhaji Akbar, S.Pd., M.Kom.
+
+```
